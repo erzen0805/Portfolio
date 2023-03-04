@@ -1,4 +1,8 @@
-<div class="container">
+<script>
+  let stylish=$$props.style;
+</script>
+
+<main class="container" style={stylish}>
   <div class="vertical-center">
     <div style="text-align: center;">
       <div class="title">DONG HYUN</div>
@@ -32,13 +36,13 @@
   <div class="floating-letters1" style="left: 85vw; top: 50vh;">
     ♡
   </div>
-</div>
+</main>
 
 <style>
 .container {
   height: 100vh;
   position: relative;
-  border: 3px solid green;
+  /* border: 3px solid green; */
   font-family: KoHo;
   user-select: none;
 }
