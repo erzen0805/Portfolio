@@ -5,21 +5,21 @@
   
   let stylish=$$props.style;
 
-  let isInView;
+  let isInView = false;
   const viewCondition = { unobserveOnEnter: false, rootMargin: '-300px' };
-  const onViewChange = ( event ) => {
+  const onViewChange = (event) => {
     //const { inView, entry, scrollDirection, observer, node} = event.detail;
     isInView = event.detail.inView;
   };
 </script>
 
-<main class="container" style={stylish}>
-  <div style="width:40vw;" use:inview={viewCondition} on:change={onViewChange}>
+<main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <div style="width: 40vw;">
     {#if isInView}
     <AboutLeft/>
     {/if}
   </div>
-  <div style="width:60vw;" use:inview={viewCondition} on:change={onViewChange}>
+  <div style="width: 60vw;">
     {#if isInView}
     <AboutRight/>
     {/if}
