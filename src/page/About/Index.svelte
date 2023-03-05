@@ -1,8 +1,9 @@
 <script>
+  import { fade, fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
-  import AboutLeft from './Left.svelte';
-  import AboutRight from './Right.svelte';
-  
+  import Left from './Left.svelte';
+  import Right from './Right.svelte';  
+
   let stylish=$$props.style;
 
   let isInView = false;
@@ -14,16 +15,16 @@
 </script>
 
 <main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
-  <div style="width: 40vw;">
-    {#if isInView}
-    <AboutLeft/>
-    {/if}
+  {#if isInView}
+  <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }} out:fade>
+    <Left />
   </div>
-  <div style="width: 60vw;">
-    {#if isInView}
-    <AboutRight/>
-    {/if}
+  {/if}
+  {#if isInView}
+  <div style="width: 60vw;" in:fly={{ y: 200, duration: 1000 }} out:fade>
+    <Right />
   </div>
+  {/if}
 </main>
 
 <style>

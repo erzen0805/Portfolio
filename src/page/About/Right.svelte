@@ -1,12 +1,11 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
   import Languages from './Languages.svelte';
   import WebFE from './WebFE.svelte';
   import CollaborationTools from './CollaborationTools.svelte';
   import ETC from './ETC.svelte';
 </script>
 
-<section class="container" in:fly={{ y: 200, duration: 1000 }} out:fade>
+<section class="container">
   <div class="rotate">
     <div>
       <span>- Languages</span>

@@ -1,8 +1,4 @@
-<script>
-  import { fade, fly } from 'svelte/transition';
-</script>
-
-<section style="margin-top: 100px; padding: 0 30px 0 10px;" in:fly={{ x: -200, duration: 1000 }} out:fade>
+<section style="margin-top: 100px; padding: 0 30px 0 10px;">
   <h2 style="display: none;">인사말</h2>
   <p class="title">Hello,</p>
   <p class="subtitle">FE+BE 개발자 이동현입니다.</p>
