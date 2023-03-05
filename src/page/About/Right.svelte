@@ -11,44 +11,49 @@
     </div>
   </div>
   <div class="contents">
-    <ImageBox imgSource="./src/assets/c.png" imgTitle="C++" />
-    <ImageBox imgSource="./src/assets/mfc.png" imgTitle="MFC" />
-    <ImageBox imgSource="./src/assets/qt.png" imgTitle="QT C++" />
-    <ImageBox imgSource="./src/assets/dotnet.png" imgTitle="C#" />
-    <ImageBox imgSource="./src/assets/wpf.png" imgTitle="WPF" />
-    <ImageBox imgSource="./src/assets/dotnetcore.png" imgTitle=".NET CORE" />
-    <ImageBox imgSource="./src/assets/java.png" imgTitle="Java" />
-    <ImageBox imgSource="./src/assets/go.png" imgTitle="GO" />
-    <ImageBox imgSource="./src/assets/python.png" imgTitle="Python" />
-    <ImageBox imgSource="./src/assets/jupyter_notebook.png" imgTitle="J-Notebook" />
-    <ImageBox imgSource="./src/assets/keras.png" imgTitle="Keras" />
+    <ImageBox source="./src/assets/c.png" title="C++" />
+    <ImageBox source="./src/assets/mfc.png" title="MFC" />
+    <ImageBox source="./src/assets/qt.png" title="QT C++" />
+    <ImageBox source="./src/assets/winform.png" title=".NET WinForm" />
+    <ImageBox source="./src/assets/wpf.png" title=".NET WPF" />
+    <ImageBox source="./src/assets/dotnetcore.png" title=".NET CORE" />
+    <ImageBox source="./src/assets/lightning_chart.png" title="LightningChart" />
+    <ImageBox source="./src/assets/java.png" title="Java" />
+    <ImageBox source="./src/assets/java_spring.png" title="Java Spring" />
+    <ImageBox source="./src/assets/go.png" title="GO" />
+    <ImageBox source="./src/assets/python.png" title="Python" />
+    <ImageBox source="./src/assets/jupyter_notebook.png" title="J-Notebook" />
+    <ImageBox source="./src/assets/keras.png" title="Keras" />
 
-    <ImageBox imgSource="./src/assets/html.png" imgTitle="HTML5" />
-    <ImageBox imgSource="./src/assets/css.png" imgTitle="CSS" />
-    <ImageBox imgSource="./src/assets/js.png" imgTitle="JavaScript" />
-    <ImageBox imgSource="./src/assets/jquery.png" imgTitle="jQuery" />
-    <ImageBox imgSource="./src/assets/es6.png" imgTitle="ES6" />
-    <ImageBox imgSource="./src/assets/svelte.png" imgTitle="Svelte.js" />
-    <ImageBox imgSource="./src/assets/react.png" imgTitle="React.js" />
-    <ImageBox imgSource="./src/assets/vue.png" imgTitle="Vue.js" />
-    <ImageBox imgSource="./src/assets/vite.png" imgTitle="Vite" />
+    <ImageBox source="./src/assets/html.png" title="HTML5" />
+    <ImageBox source="./src/assets/css.png" title="CSS" />
+    <ImageBox source="./src/assets/js.png" title="JavaScript" />
+    <ImageBox source="./src/assets/jquery.png" title="jQuery" />
+    <ImageBox source="./src/assets/es6.png" title="ES6" />
+    <ImageBox source="./src/assets/svelte.png" title="Svelte.js" />
+    <ImageBox source="./src/assets/react.png" title="React.js" />
+    <ImageBox source="./src/assets/redux.png" title="Redux" />
+    <ImageBox source="./src/assets/vue.png" title="Vue.js" />
+    <ImageBox source="./src/assets/threejs.png" title="Three.js" />
+    <ImageBox source="./src/assets/vite.png" title="Vite" />
 
-    <ImageBox imgSource="./src/assets/github.png" imgTitle="GitHub" />
-    <ImageBox imgSource="./src/assets/bitbucket.png" imgTitle="Bitbucket" />
-
-    <ImageBox imgSource="./src/assets/redmine.png" imgTitle="Redmine" />
-    <ImageBox imgSource="./src/assets/git.png" imgTitle="Git" />
-    <ImageBox imgSource="./src/assets/iec61850.png" imgTitle="IEC61850" />
-    <ImageBox imgSource="./src/assets/jira.png" imgTitle="Jira" />
-    <ImageBox imgSource="./src/assets/modbus.png" imgTitle="MODBUS" />
-    <ImageBox imgSource="./src/assets/mssql.png" imgTitle="MSSQL" />
-    <ImageBox imgSource="./src/assets/mysql.png" imgTitle="MySQL" />
-    <ImageBox imgSource="./src/assets/notion.png" imgTitle="Notion" />
-    <ImageBox imgSource="./src/assets/oracle.png" imgTitle="OracleDB" />
-    <ImageBox imgSource="./src/assets/redis.png" imgTitle="Redis" />
-    <ImageBox imgSource="./src/assets/sqlite.png" imgTitle="SQLite" />
-    <ImageBox imgSource="./src/assets/svn.png" imgTitle="SVN" />
-    <ImageBox imgSource="./src/assets/tcp.png" imgTitle="TCP/IP" />
+    <ImageBox source="./src/assets/svn.png" title="SVN" />
+    <ImageBox source="./src/assets/git.png" title="Git" />
+    <ImageBox source="./src/assets/github.png" title="GitHub" />
+    <ImageBox source="./src/assets/bitbucket.png" title="Bitbucket" />
+    <ImageBox source="./src/assets/redmine.png" title="Redmine" />
+    <ImageBox source="./src/assets/jira.png" title="Jira" />
+    <ImageBox source="./src/assets/notion.png" title="Notion" />
+    
+    <ImageBox source="./src/assets/tcp.png" title="TCP/IP" />
+    <ImageBox source="./src/assets/http.png" title="HTTP" />
+    <ImageBox source="./src/assets/modbus.png" title="MODBUS" />
+    <ImageBox source="./src/assets/iec61850.png" title="IEC61850" />
+    <ImageBox source="./src/assets/mssql.png" title="MSSQL" />
+    <ImageBox source="./src/assets/mysql.png" title="MySQL" />
+    <ImageBox source="./src/assets/oracle.png" title="OracleDB" />
+    <ImageBox source="./src/assets/redis.png" title="Redis" />
+    <ImageBox source="./src/assets/sqlite.png" title="SQLite" />
   </div>
 </section>
 

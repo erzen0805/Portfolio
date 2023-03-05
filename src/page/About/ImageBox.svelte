@@ -1,11 +1,11 @@
 <script>
-  export let imgSource;
-  export let imgTitle;
+  export let source;
+  export let title;
 </script>
 
 <div class="container">
-  <img src={imgSource} alt={imgTitle}>
-  <div class="title">{imgTitle}</div>
+  <img src={source} alt={title}>
+  <div class="title">{title}</div>
 </div>
 
 <style>
