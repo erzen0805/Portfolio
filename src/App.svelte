@@ -7,7 +7,7 @@
 </script>
 
 <Menu style="width: {menuWidth};"/>
-<div style="margin-left: {menuWidth};">
+<div style="margin-left: {menuWidth}; overflow: hidden;">
   <Home/>
   <About/>
 </div>
