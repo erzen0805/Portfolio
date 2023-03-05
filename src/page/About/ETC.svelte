@@ -9,5 +9,5 @@
 <ImageBox source="./src/assets/mssql.png" title="MSSQL" />
 <ImageBox source="./src/assets/mysql.png" title="MySQL" />
 <ImageBox source="./src/assets/oracle.png" title="OracleDB" />
-<ImageBox source="./src/assets/redis.png" title="Redis" />
 <ImageBox source="./src/assets/sqlite.png" title="SQLite" />
+<ImageBox source="./src/assets/redis.png" title="Redis" />
