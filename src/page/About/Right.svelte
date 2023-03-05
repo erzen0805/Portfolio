@@ -6,7 +6,7 @@
 <section class="container" in:fly={{ y: 200, duration: 1000 }} out:fade>
   <div class="rotate">
     <div>
-      <span>Languages1</span>
+      <span>Languages</span>
       <span>Collaboration tools</span>
     </div>
   </div>
@@ -56,11 +56,11 @@
   position: relative;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 50px;
   /* border: 3px solid green; */
-  height: calc(100vh - 250px);
-  left: 5vw;
-  top: 6vh;
+  width: 90%;
+  height: calc(100vh - 310px);
+  left: 9vw;
+  top: 9vh;
   overflow-y: scroll;
 }
 </style>

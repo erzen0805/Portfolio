@@ -1,7 +1,7 @@
 <script>
   import { inview } from 'svelte-inview';
-  import AboutLeft from './AboutLeft.svelte';
-  import AboutRight from './AboutRight.svelte';
+  import AboutLeft from './Left.svelte';
+  import AboutRight from './Right.svelte';
   
   let stylish=$$props.style;
 
