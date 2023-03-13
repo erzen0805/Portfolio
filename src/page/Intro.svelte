@@ -1,5 +1,17 @@
 <script>
   let stylish=$$props.style;
+
+  const alphabets = [
+    { text: "D", position: "left: 10vw; top: 5vh;" },
+    { text: "O", position: "left: 30vw; top: 15vh;" },
+    { text: "N", position: "left: 57vw; top: 12vh;" },
+    { text: "G", position: "left: 80vw; top: 17vh;" },
+    { text: "H", position: "left: 16vw; top: 40vh;" },
+    { text: "Y", position: "left: 12vw; top: 70vh;" },
+    { text: "U", position: "left: 45vw; top: 80vh;" },
+    { text: "N", position: "left: 72vw; top: 72vh;" },
+    { text: "♡", position: "left: 85vw; top: 50vh;" },
+  ];
 </script>
 
 <main class="container" style={stylish}>
@@ -9,33 +21,11 @@
       <div class="subtitle">PORTFOLIO</div>
     </div>
   </div>
-  <div class="no-print floating-letters1" style="left: 10vw; top: 5vh; animation-delay: 0.5s;">
-    D
+  {#each alphabets as { text, position }, i}
+  <div class="no-print floating-letters{i%2}" style="{position}; animation-delay: 0.{i}s;">
+    {text}
   </div>
-  <div class="no-print floating-letters2" style="left: 30vw; top: 15vh; ">
-    O
-  </div>
-  <div class="no-print floating-letters1" style="left: 57vw; top: 12vh;">
-    N
-  </div>
-  <div class="no-print floating-letters2" style="left: 80vw; top: 17vh; animation-delay: 0.5s;">
-    G
-  </div>
-  <div class="no-print floating-letters1" style="left: 16vw; top: 40vh;">
-    H
-  </div>
-  <div class="no-print floating-letters2" style="left: 12vw; top: 70vh;">
-    Y
-  </div>
-  <div class="no-print floating-letters1" style="left: 45vw; top: 80vh; animation-delay: 0.5s;">
-    U
-  </div>
-  <div class="no-print floating-letters2" style="left: 72vw; top: 72vh;">
-    N
-  </div>
-  <div class="no-print floating-letters1" style="left: 85vw; top: 50vh;">
-    ♡
-  </div>
+  {/each}
 </main>
 
 <style>
@@ -94,21 +84,20 @@
   top: calc(50% - 0.33em);
   transform: translate(0px, -50%) rotate(33.6deg);
 }
-.floating-letters1 {
+.floating-letters0 {
   position: absolute;
   font-size: 5vw;
   font-weight: 900;
   animation: 1s ease 0s infinite alternate none running movement;
   color: #313131; 
 }
-.floating-letters2 {
+.floating-letters1 {
   position: absolute;
   font-size: 5vw;
   font-weight: 900;
   animation: 1s ease 0s infinite alternate none running movement;
   color: #000000;
 }
-
 @keyframes movement {
   from {
     filter: brightness(60%);

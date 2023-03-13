@@ -13,7 +13,6 @@
   </p>
   <p class="contents">
     기능과 심미적인 부분 모두 <span class="contents-strong">조화를 이룰 수 있는</span> 웹을 제작하고, 팀원들과 조화롭게 어울릴 수 있는 팀원이 되고자 합니다.
-
   </p>
   <p class="contents">
     읽어주셔서 감사합니다.

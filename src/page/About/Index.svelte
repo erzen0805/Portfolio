@@ -8,9 +8,9 @@
 
   let isInView = false;
   const viewCondition = { unobserveOnEnter: false, rootMargin: '-300px' };
-  const onViewChange = (event) => {
-    //const { inView, entry, scrollDirection, observer, node} = event.detail;
-    isInView = event.detail.inView;
+  const onViewChange = ({detail}) => {
+    //const { inView, entry, scrollDirection, observer, node} = event;
+    isInView = detail.inView;
   };
 </script>
 
@@ -19,8 +19,6 @@
   <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }} out:fade>
     <Left />
   </div>
-  {/if}
-  {#if isInView}
   <div style="width: 60vw;" in:fly={{ y: 200, duration: 1000 }} out:fade>
     <Right />
   </div>
