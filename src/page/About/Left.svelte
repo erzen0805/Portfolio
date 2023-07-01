@@ -1,18 +1,15 @@
 <section style="margin-top: 100px; padding: 0 30px 0 10px;">
   <h2 style="display: none;">인사말</h2>
   <p class="title">Hello,</p>
-  <p class="subtitle">FE+BE 개발자 이동현입니다.</p>
+  <p class="subtitle">고객 중심의 개발자 이동현입니다.</p>
   <p class="contents">
-    <span class="contents-strong">구일신 일일신 우일신</span> 나날이 새롭게 하고, 또 날로 새롭게 하라. 어제보다는 더 성장한 개발자로, 내일은 오늘보다 더 좋은 코드를 짤 수 있도록 항상 진보하는 개발자가 되고자 합니다.
+    고객의 요구사항을 IT기술을 수단으로써 활용하여 고객 경험을 개선 및 최적화 나아가 놀라운 경험속으로 인도하는 것에 보람을 느낍니다.
   </p>
   <p class="contents">
-    더 나은 UI, UX가 무엇인지 고민해보고 개선하는 것을 좋아하며, <span class="contents-strong">매력적인 웹사이트</span> 개발에 관심이 많습니다.
+    <span class="contents-strong">고객이란</span> 제품 사용자, 운영자, 협업파트너 그리고 미래의 제 코드를 바라보는 자신입니다.
   </p>
   <p class="contents">
-    아이디어로 새로운 시도를 해보고 응용하여 새로운 것을 제작하는 것을 좋아합니다. 또 애니메이션과 3D에도 관심이 많아 꾸준히 다른 사이트의 트렌드를 확인해보며 공부하고 있습니다.
-  </p>
-  <p class="contents">
-    기능과 심미적인 부분 모두 <span class="contents-strong">조화를 이룰 수 있는</span> 웹을 제작하고, 팀원들과 조화롭게 어울릴 수 있는 팀원이 되고자 합니다.
+    <span class="contents-strong">경쟁상대</span>는 어제의 자신이며, 고객 중심의 접근과 미래 지향적인 태도를 바탕으로, 고객과 함께 성장하고 발전할 수 있는 개발자가 되기 위해 노력하고 있습니다.
   </p>
   <p class="contents">
     읽어주셔서 감사합니다.
@@ -33,7 +30,7 @@
   bottom: -100%;
   left: 0px;
   transform: rotateX(180deg);
-  background: linear-gradient(to right, #fbcac9, #8ca6ce);
+  background: linear-gradient(to top, rgba(251, 202, 201, 0.6), rgba(140, 166, 206, 0.3));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
