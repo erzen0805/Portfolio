@@ -1,7 +1,7 @@
 <script>
   import Menu from './Menu.svelte';
-  import Intro from './page/Intro.svelte';
-  import About from './page/About/Index.svelte';
+  import Intro from './page/intro/Index.svelte';
+  import About from './page/about/Index.svelte';
 
   const menuWidth = "100px";
 </script>
