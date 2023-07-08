@@ -15,6 +15,7 @@
 </script>
 
 <main class="container" style={stylish}>
+  <h2 style="display: none;">Intro</h2>
   <div class="vertical-center">
     <div style="text-align: center;">
       <div class="title">D<span class="o">O</span>NG HYUN</div>

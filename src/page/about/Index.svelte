@@ -16,6 +16,7 @@
 
 
 <main class="root" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <h2 style="display: none;">About</h2>
   <div class="container">
   {#if isInView}
   <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }}>

@@ -1,6 +1,7 @@
 <script>
   import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
+  import P9 from './P9.svelte';
   import UnderConstruction from '@/common/UnderConstruction.svelte';
 
   let stylish=$$props.style;
@@ -31,13 +32,12 @@
 </script>
 
 <main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <h2 style="display: none;">Career</h2>
   <div style="width: calc(100% - 500px); margin-bottom: 50px;">
   {#if isInView}
     <div class="contents" in:fly={{ y: 200, duration: 1000 }}>
       {#if viewPage === 0}
-      <div>
-        <UnderConstruction />
-      </div>
+        <P9/>
       {:else}
         <UnderConstruction />
       {/if}
@@ -70,6 +70,7 @@
   border-radius: 25px;
   height: 80vh;
   box-shadow: rgb(0, 0, 0) 0px 0px 20px inset;
+  overflow-y: auto;
 }
 @media (max-height: 500px) {
   .contents {
