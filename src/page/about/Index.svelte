@@ -1,8 +1,8 @@
 <script>
   import { fade, fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
-  import Left from './Left.svelte';
-  import Right from './Right.svelte';  
+  import Left from './left/Index.svelte';
+  import Right from './right/Index.svelte';  
 
   let stylish=$$props.style;
 
