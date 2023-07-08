@@ -1,6 +1,7 @@
 <script>
   import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
+  import P7 from './P7.svelte';
   import P8 from './P8.svelte';
   import P9 from './P9.svelte';
   import UnderConstruction from '@/common/UnderConstruction.svelte';
@@ -21,7 +22,7 @@
   const projects = [
     {title: "재직중 (1.4년)", company: "전력설비 예방진단 | 비츠로시스"},
     {title: "~2022 (1.2년)", company: "전력설비 예방진단 | YPP"},
-    {title: "~2021 (1.0년)", company: "SCADA | 오토닉스"},
+    {title: "~2021 (1.0년)", company: "SCADA | Autonics"},
     {title: "~2020 (1.2년)", company: "카카오 선물하기 서버 | 쿠프마케팅"},
     {title: "~2019 (0.5년)", company: "가상화폐 자동투자 봇 | 개인개발"},
     {title: "~2018 (1.3년)", company: "ATM/KIOSK 관리 서버 | 효성T&S"},
@@ -41,6 +42,8 @@
         <P9/>
       {:else if viewPage === 1}
         <P8/>
+      {:else if viewPage === 2}
+        <P7/>
       {:else}
         <UnderConstruction />
       {/if}

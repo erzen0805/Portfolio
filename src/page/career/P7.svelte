@@ -2,31 +2,31 @@
 </script>
 
 <div class="root">
-    <h3 class="project-name">전력설비 예방진단 시스템</h3>
-    <img src="img/career/vitzrosys_tds.png" style="width: 100%; border-radius: 10px;"/>
+    <h3 class="project-name">SCADA</h3>
+    <img src="img/career/autonics_scada.png" style="width: 100%; border-radius: 10px;"/>
     <h4 class="title">프로젝트 설명</h4>
     <div class="content">
       <p class="contents-normal">
-        한국전력공사(KEPCO)에서 운영하는 전력 설비의 안전 및 신뢰성을 평가하기 위한 시스템입니다.
+        SCADA는 "Supervisory Control and Data Acquisition"의 약자로, 시스템 제어와 데이터 수집을 위한 통신 기술을 통합하는 시스템입니다.
       </p>
       <p class="contents-normal">
-        발전소, 변전소, 전력선로 등의 전력 시설물을 모니터링하고, 잠재적인 문제를 조기에 탐지하여 사고나 장애의 발생을 예방하고자 개발되었습니다.
+        SCADA 시스템은 네트워크를 통해 분산된 제어 장치와 통신하여 실시간으로 데이터를 모니터링하고 제어합니다.
       </p>
       <p class="contents-normal">
-        시스템은 데이터를 수집하고 분석한 결과를 시각화하고 경고나 알림을 보내어 운영자들이 조치를 취할 수 있도록 합니다.
+        신뢰성과 안정성이 요구되는 환경에서 널리 사용되며, 에너지, 제조, 수도 등 다양한 산업 분야에서 활용됩니다.
       </p>
-      <span class="contents-strong">신규프로젝트 중도참여 | 4인(PM, PM, BE, 막내) | 막내로 참여</span>
+      <span class="contents-strong">신규프로젝트 | 10인(PM, QT C++:8, PLC통신, 웹) | 웹 개발자로 참여</span>
     </div>
     <h4 class="title">수행 업무</h4>
     <div class="content">
       <p class="contents-normal">
-        화면기획, Restful API 정의, Front-end 개발, 진단알고리즘 개발, 부분방전파형관리도구 개발
+        웹 일괄, SCADA화면 웹동기화, Kernal 모니터링/제어
       </p>
       <p class="contents-strong">
-        언어 - .NET WPF | Vanilla JS | Python
+        언어 - React.js | GoLang | QT C++ | Python
       </p>
       <p class="contents-strong">
-        기타 - HTTP | Keras | IEC61850 | MSSQL
+        기타 - HTTP | Sqlite
       </p>
     </div>
 </div>
