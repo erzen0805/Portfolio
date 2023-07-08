@@ -11,5 +11,5 @@
 <div style="margin-left: {menuWidth}; overflow: hidden;">
   <Intro/>
   <About/>
-  <Project/>
+  <!-- <Project/> -->
 </div>

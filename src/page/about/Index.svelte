@@ -7,19 +7,21 @@
   let stylish=$$props.style;
 
   let isInView = false;
-  const viewCondition = { unobserveOnEnter: false, rootMargin: '-300px' };
+  const viewCondition = { unobserveOnEnter: false, rootMargin: '-200px' };
   const onViewChange = ({detail}) => {
     //const { inView, entry, scrollDirection, observer, node} = event;
     isInView = detail.inView;
   };
 </script>
 
+
 <main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <div style="height: 480px; display: inline-block;" ></div>
   {#if isInView}
-  <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }} out:fade>
+  <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }}>
     <Left />
   </div>
-  <div style="width: 60vw;" in:fly={{ y: 200, duration: 1000 }} out:fade>
+  <div style="width: 60vw; margin-bottom: 200px;" in:fly={{ y: 200, duration: 1000 }}>
     <Right />
   </div>
   {/if}
@@ -27,11 +29,9 @@
 
 <style>
 .container {
-  height: 100vh;
-  display: flex;
-  position: relative;  
-  /* border: 3px solid green; */
   font-family: KoHo;
   user-select: none;
+  position: relative;
+  display: flex;
 }
 </style>

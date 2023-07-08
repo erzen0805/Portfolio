@@ -24,7 +24,6 @@
   width: 6vw;
   height: 8vw;
   margin-bottom: 15px;
-  position: relative;
   /* border: 3px solid green; */
 }
 img {
