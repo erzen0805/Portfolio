@@ -2,15 +2,15 @@
   let stylish=$$props.style;
 
   const alphabets = [
-    { text: "D", position: "left: 10vw; top: 5vh;" },
-    { text: "O", position: "left: 30vw; top: 15vh;" },
-    { text: "N", position: "left: 57vw; top: 12vh;" },
-    { text: "G", position: "left: 80vw; top: 17vh;" },
-    { text: "H", position: "left: 16vw; top: 40vh;" },
-    { text: "Y", position: "left: 12vw; top: 70vh;" },
-    { text: "U", position: "left: 45vw; top: 80vh;" },
-    { text: "N", position: "left: 72vw; top: 72vh;" },
-    { text: "♡", position: "left: 85vw; top: 50vh;" },
+    { text: "D", position: "left: 10vw; top: 5%;" },
+    { text: "O", position: "left: 30vw; top: 15%;" },
+    { text: "N", position: "left: 57vw; top: 12%;" },
+    { text: "G", position: "left: 80vw; top: 17%;" },
+    { text: "H", position: "left: 16vw; top: 40%;" },
+    { text: "Y", position: "left: 12vw; top: 70%;" },
+    { text: "U", position: "left: 45vw; top: 80%;" },
+    { text: "N", position: "left: 72vw; top: 72%;" },
+    { text: "♡", position: "left: 85vw; top: 50%;" },
   ];
 </script>
 
@@ -31,10 +31,17 @@
 <style>
 .container {
   height: 100vh;
-  position: relative;
+  min-height: 400px;
   /* border: 3px solid green; */
   font-family: KoHo;
   user-select: none;
+  position: relative;
+}
+@media (max-height: 400px) {
+  .container {
+    height: unset;
+    min-height: 400px;
+  }
 }
 .vertical-center {
   margin: 0;
