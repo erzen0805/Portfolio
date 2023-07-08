@@ -5,7 +5,7 @@
   import ETC from './ETC.svelte';
 
   let viewPage = 0;
-  function onContentsChangeClick(pageIndex) {
+  function onChangePage(pageIndex) {
     viewPage = pageIndex;
   }
 </script>
@@ -13,24 +13,21 @@
 <section class="container">
   <div class="category">
     <ul>
-      <li class:selected={viewPage===0} on:click|preventDefault={()=>onContentsChangeClick(0)}>- Languages</li>
-      <li class:selected={viewPage===1} on:click|preventDefault={()=>onContentsChangeClick(1)}>- Web FE</li>
-      <li class:selected={viewPage===2} on:click|preventDefault={()=>onContentsChangeClick(2)}>- Collaboration Tools</li>
-      <li class:selected={viewPage===3} on:click|preventDefault={()=>onContentsChangeClick(3)}>- ETC</li>
+      <li class:selected={viewPage===0} on:click|preventDefault={()=>onChangePage(0)}>- Languages</li>
+      <li class:selected={viewPage===1} on:click|preventDefault={()=>onChangePage(1)}>- Web FE</li>
+      <li class:selected={viewPage===2} on:click|preventDefault={()=>onChangePage(2)}>- Collaboration Tools</li>
+      <li class:selected={viewPage===3} on:click|preventDefault={()=>onChangePage(3)}>- ETC</li>
     </ul>
   </div>
-  <div class="parent">
+  <div class="contents-parent">
     <div class="contents">
       {#if viewPage === 0}
       <Languages />
-      {/if}
-      {#if viewPage === 1}
+      {:else if viewPage === 1}
       <WebFE />
-      {/if}
-      {#if viewPage === 2}
+      {:else if viewPage === 2}
       <CollaborationTools />
-      {/if}
-      {#if viewPage === 3}
+      {:else}
       <ETC />
       {/if}
     </div>
@@ -40,7 +37,7 @@
 <style>
 .container {
   width: 90%;
-  height: 480px;
+  height: 100%;
   margin-top: 100px;
   padding: 0 30px 0 10px;
   background-color: rgb(76, 76, 76);
@@ -57,11 +54,6 @@
   top: 40px;
   box-shadow: rgb(0 0 0 / 50%) 0px 4px 24px;
 }
-@media (min-height: 480px) {
-  .container {
-    height: 100%;
-  }
-}
 .category {
   transform: skewX(0.3deg) rotateZ(-7deg);
 }
@@ -75,7 +67,7 @@
 .category .selected {
   color: rgb(245, 210, 14);
 }
-.parent {
+.contents-parent {
   display: flex;
   align-items: flex-start;
   z-index: 1;

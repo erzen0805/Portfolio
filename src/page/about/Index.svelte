@@ -15,8 +15,8 @@
 </script>
 
 
-<main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
-  <div style="height: 480px; display: inline-block;" ></div>
+<main class="root" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <div class="container">
   {#if isInView}
   <div style="width: 40vw;" in:fly={{ x: -200, duration: 1000 }}>
     <Left />
@@ -25,13 +25,22 @@
     <Right />
   </div>
   {/if}
+  </div>
 </main>
 
 <style>
-.container {
+.root {
   font-family: KoHo;
   user-select: none;
-  position: relative;
+}
+.container {
+  height: 480px;
+  display: inline-block;
   display: flex;
+}
+@media (min-height: 480px) {
+  .container {
+    height: 100vh;
+  }
 }
 </style>

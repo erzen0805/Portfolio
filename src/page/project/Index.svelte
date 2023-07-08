@@ -1,112 +1,97 @@
 <script>
-    let stylish=$$props.style;
-  
-    const alphabets = [
-      { text: "D", position: "left: 10vw; top: 5vh;" },
-      { text: "O", position: "left: 30vw; top: 15vh;" },
-      { text: "N", position: "left: 57vw; top: 12vh;" },
-      { text: "G", position: "left: 80vw; top: 17vh;" },
-      { text: "H", position: "left: 16vw; top: 40vh;" },
-      { text: "Y", position: "left: 12vw; top: 70vh;" },
-      { text: "U", position: "left: 45vw; top: 80vh;" },
-      { text: "N", position: "left: 72vw; top: 72vh;" },
-      { text: "♡", position: "left: 85vw; top: 50vh;" },
-    ];
-  </script>
-  
-  <main class="container" style={stylish}>
-    <div class="vertical-center">
-      <div style="text-align: center;">
-        <div class="title">D<span class="o">O</span>NG HYUN</div>
-        <div class="subtitle">PORTFOLIO</div>
-      </div>
+  import { fly } from 'svelte/transition';
+  import { inview } from 'svelte-inview';
+
+  let stylish=$$props.style;
+
+  let isInView = false;
+  const viewCondition = { unobserveOnEnter: false, rootMargin: '-200px' };
+  const onViewChange = ({detail}) => {
+    isInView = detail.inView;
+  };
+
+  let viewPage = 0;
+  function onChangePage(pageIndex) {
+    viewPage = pageIndex;
+  }
+
+  const projects = [
+    {title: "재직중 (1.4년)", company: "전력설비 예방진단 | 비츠로시스"},
+    {title: "~2022 (1.2년)", company: "전력설비 예방진단 | YPP"},
+    {title: "~2021 (1.0년)", company: "SCADA | 오토닉스"},
+    {title: "~2020 (1.2년)", company: "카카오 선물하기 서버 | 쿠프마케팅"},
+    {title: "~2019 (0.5년)", company: "가상화폐 자동투자 봇 | 개인개발"},
+    {title: "~2018 (1.3년)", company: "ATM/KIOSK 관리 서버 | 효성T&S"},
+    {title: "~2017 (7.3년)", company: "전력설비 예방진단 | 유호전기공업"},
+    {title: "~2014 (0.8년)", company: "전력 SCADA | 가보"},
+    {title: "~2009 (1.0년)", company: "바다이야기 | 엔톤"},
+    {title: "~2009", company: "컴퓨터공학과 학사 | 동명대학교"},
+  ];
+</script>
+
+<main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
+  <div style="width: calc(100% - 500px); margin-bottom: 50px;">
+  {#if isInView}
+    <div class="contents" in:fly={{ y: 200, duration: 1000 }}>
     </div>
-    {#each alphabets as { text, position }, i}
-    <div class="no-print floating-letters{i%2}" style="{position}; animation-delay: 0.{i}s;">
-      {text}
-    </div>
-    {/each}
-  </main>
-  
-  <style>
-  .container {
-    height: 100vh;
-    position: relative;
-    /* border: 3px solid green; */
-    font-family: KoHo;
-    user-select: none;
+  {/if}
+  </div>
+  <div style="width: 500px;">
+    <ul class="list">
+      {#each projects as { title, company }, i}
+      <li class:selected={viewPage===i} on:click|preventDefault={()=>onChangePage(i)}>
+        <span class="label-left">{title}</span><span class="label-right">{company}</span>
+      </li>
+      {/each}
+    </ul>
+  </div>
+</main>
+
+<style>
+.container {
+  user-select: none;
+  display: flex;
+  font-family: KoHo;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: rgb(146, 146, 146);
+}
+.contents {
+  width: 100%;
+  background-color: rgb(43, 44, 42);
+  border-radius: 25px;
+  height: 80vh;
+  box-shadow: rgb(0, 0, 0) 0px 0px 20px inset;
+}
+@media (max-height: 500px) {
+  .contents {
+    height: 500px;
   }
-  .vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  .title {
-    font-size: 9.3rem;
-    font-family: 'Keania One', cursive;
-    color: rgb(184, 232, 41);
-  }
-  .subtitle {
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: white;
-    font-family: KoHo;
-  }
-  .o {
-    position: relative;
-  }
-  .o::before {
-    left: 0px;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-bottom: 27px solid rgb(184, 232, 41);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: calc(50% - 0.33em);
-    transform: translate(0px, -50%) rotate(-33.6deg);
-  }
-  .o::after {
-    right: 0px;
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    border-bottom: 27px solid rgb(184, 232, 41);
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    top: calc(50% - 0.33em);
-    transform: translate(0px, -50%) rotate(33.6deg);
-  }
-  .floating-letters0 {
-    position: absolute;
-    font-size: 5vw;
-    font-weight: 900;
-    animation: 1s ease 0s infinite alternate none running movement;
-    color: #313131; 
-  }
-  .floating-letters1 {
-    position: absolute;
-    font-size: 5vw;
-    font-weight: 900;
-    animation: 1s ease 0s infinite alternate none running movement;
-    color: #000000;
-  }
-  @keyframes movement {
-    from {
-      filter: brightness(60%);
-      transform: scale(0.8) rotate(0deg);
-    }
-    to {
-      filter: brightness(100%);
-      transform: scale(1.2) rotate(360deg);
-    }
-  }
-  </style>
-  
+}
+.list {
+  padding: 30px;
+}
+.list li {
+  font-size: 1.10rem;
+  color: rgb(158, 158, 158);
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+.list li.selected {
+  color: white;
+  font-weight: 700;
+  border-left: 5px solid pink; /* 왼쪽 선 스타일과 두께 설정 */
+  position: relative;
+  left: -5px;
+}
+.label-left {
+  display: inline-block;
+  width: 120px;
+  margin-right: 20px;
+  padding-left: 5px;
+}
+.label-right {
+  display: inline-block;
+  width: 280px;
+}
+</style>
