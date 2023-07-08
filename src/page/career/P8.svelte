@@ -15,21 +15,18 @@
       <p class="contents-normal">
         시스템은 데이터를 수집하고 분석한 결과를 시각화하고 경고나 알림을 보내어 운영자들이 조치를 취할 수 있도록 합니다.
       </p>
-      <span class="contents-strong">신규프로젝트 | 6인(PM, BE2, FE2, Me) | S/W 파트 디렉터</span>
+      <span class="contents-strong">신규프로젝트 중도참여 | 3인(PM, PM, Me) | 막내</span>
     </div>
     <h4 class="title">수행 업무</h4>
     <div class="content">
       <p class="contents-normal">
-        화면기획, 프로세서/통신 아키텍쳐 설계, 프로토콜 정의, 일정 수립 및 관리, 팀역량 교육
-      </p>
-      <p class="contents-normal">
-        본 프로젝트 개발, 3D 파형 시각화, 진단알고리즘, 미들웨어 데이터 처리
+        화면기획, Front-end, Restful API 정의, Front-end 개발, 진단알고리즘
       </p>
       <p class="contents-strong">
-        언어 - .NET WPF | Svelte.js | Node.js | Python
+        언어 - .NET WPF | Vanilla JS | Python
       </p>
       <p class="contents-strong">
-        기타 - .NET Lightning Chart | three.js | TCP/IP | HTTP | IEC61850 | MSSQL
+        기타 - HTTP | IEC61850 | MSSQL
       </p>
     </div>
 </div>

@@ -1,6 +1,7 @@
 <script>
   import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
+  import P8 from './P8.svelte';
   import P9 from './P9.svelte';
   import UnderConstruction from '@/common/UnderConstruction.svelte';
 
@@ -38,6 +39,8 @@
     <div class="contents" in:fly={{ y: 200, duration: 1000 }}>
       {#if viewPage === 0}
         <P9/>
+      {:else if viewPage === 1}
+        <P8/>
       {:else}
         <UnderConstruction />
       {/if}
