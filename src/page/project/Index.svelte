@@ -1,6 +1,7 @@
 <script>
   import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
+  import UnderConstruction from '@/common/UnderConstruction.svelte';
 
   let stylish=$$props.style;
 
@@ -35,10 +36,10 @@
     <div class="contents" in:fly={{ y: 200, duration: 1000 }}>
       {#if viewPage === 0}
       <div>
-        
+        <UnderConstruction />
       </div>
       {:else}
-      <ETC />
+        <UnderConstruction />
       {/if}
     </div>
   {/if}
