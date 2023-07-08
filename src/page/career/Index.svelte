@@ -1,6 +1,7 @@
 <script>
   import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
+  import P6 from './P6.svelte';
   import P7 from './P7.svelte';
   import P8 from './P8.svelte';
   import P9 from './P9.svelte';
@@ -44,6 +45,8 @@
         <P8/>
       {:else if viewPage === 2}
         <P7/>
+      {:else if viewPage === 3}
+        <P6/>
       {:else}
         <UnderConstruction />
       {/if}
