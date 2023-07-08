@@ -33,6 +33,13 @@
   <div style="width: calc(100% - 500px); margin-bottom: 50px;">
   {#if isInView}
     <div class="contents" in:fly={{ y: 200, duration: 1000 }}>
+      {#if viewPage === 0}
+      <div>
+        
+      </div>
+      {:else}
+      <ETC />
+      {/if}
     </div>
   {/if}
   </div>
