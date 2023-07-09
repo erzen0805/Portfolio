@@ -2,7 +2,7 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="동명대학교 컴퓨터공학과" imgSrc={["img/career/university2.png","img/career/university1.png"]}>
+<Project name="동명대학교 컴퓨터공학과" imgSrc={["img/career/university2.png"]}>
   <h4 class="title">학생 시절</h4>
   <div class="content">
     <p class="contents-normal">

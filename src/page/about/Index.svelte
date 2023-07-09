@@ -1,5 +1,5 @@
 <script>
-  import { fade, fly } from 'svelte/transition';
+  import { fly } from 'svelte/transition';
   import { inview } from 'svelte-inview';
   import Left from './left/Index.svelte';
   import Right from './right/Index.svelte';  
