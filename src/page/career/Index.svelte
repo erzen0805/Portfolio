@@ -21,11 +21,6 @@
     isInView = detail.inView;
   };
 
-  let viewPage = 0;
-  function onChangePage(pageIndex) {
-    viewPage = pageIndex;
-  }
-
   const projects = [
     {title: "재직중 (1.4년)", company: "전력설비 예방진단 | 비츠로시스"},
     {title: "~2022 (1.2년)", company: "전력설비 예방진단 | YPP"},
@@ -38,6 +33,11 @@
     {title: "~2009 (1.0년)", company: "바다이야기 | 엔톤"},
     {title: "~2009", company: "컴퓨터공학과 학사 | 동명대학교"},
   ];
+
+  let viewPage = projects.length - 1;
+  function onChangePage(pageIndex) {
+    viewPage = pageIndex;
+  }
 </script>
 
 <main class="container" style={stylish} use:inview={viewCondition} on:change={onViewChange}>
@@ -74,7 +74,11 @@
   <div style="width: 500px;">
     <ul class="list">
       {#each projects as { title, company }, i}
-      <li class:selected={viewPage===projects.length-i-1} on:click|preventDefault={()=>onChangePage(projects.length-i-1)}>
+      <li 
+        class:selected={viewPage===projects.length-i-1}
+        on:click|preventDefault={()=>onChangePage(projects.length-i-1)}
+        on:keypress|preventDefault={()=>onChangePage(projects.length-i-1)}
+      >
         <span class="label-left">{title}</span><span class="label-right">{company}</span>
       </li>
       {/each}
