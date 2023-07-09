@@ -2,7 +2,7 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="가상화폐 자동투자 봇" imgSrc="img/career/vcts_my.png">
+<Project name="가상화폐 자동투자 봇" imgSrc={["img/career/vcts_my.png"]}>
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">

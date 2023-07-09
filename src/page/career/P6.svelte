@@ -2,7 +2,7 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="카카오 선물하기 서버" imgSrc="img/career/coop_kakao.png">
+<Project name="카카오 선물하기 서버" imgSrc={["img/career/coop_kakao.png", "img/career/coop_kakao3.jpg"]}>
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">

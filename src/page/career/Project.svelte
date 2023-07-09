@@ -1,13 +1,19 @@
 <script>
+  import { fade } from 'svelte/transition';
+
   export let name;
   export let imgSrc;
 </script>
 
-<div class="root">
+<div class="root" in:fade>
   <h3 class="name">{name}</h3>
+  {#if !!imgSrc}
   <div style="text-align: center;">
-    <img src={imgSrc} style="border-radius: 10px; max-height: 300px;" alt={name}/>
+    {#each imgSrc as src}
+    <img src={src} alt={name}/>
+    {/each}
   </div>
+  {/if}
   <slot />
 </div>
 
@@ -26,5 +32,10 @@
   display: flex;
   flex-direction: column;
   color: rgb(184, 232, 41);
+}
+img {
+  border-radius: 10px;
+  max-height: 190px;
+  margin-right: 4px;
 }
 </style>

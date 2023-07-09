@@ -2,7 +2,7 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="ATM/KIOSK 관리 서버" imgSrc="img/career/atms_hyosung.jpg">
+<Project name="ATM/KIOSK 관리 서버" imgSrc={["img/career/atms_hyosung.jpg", "img/career/atms_hyosung2.jpg"]}>
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">

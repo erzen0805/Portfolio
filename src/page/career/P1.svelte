@@ -2,7 +2,7 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="바다이야기" imgSrc="img/career/enton_sea_story.jpg">
+<Project name="바다이야기" imgSrc={["img/career/enton_sea_story.jpg"]}>
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">
