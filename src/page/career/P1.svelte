@@ -11,7 +11,7 @@
     <p class="contents-normal">
       이런 시장을 인터넷과 결합하여 합법적 인터넷 도박장을 만드는 것을 목표로 시작된 프로젝트 입니다.
     </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 4인(대표, 디자이너, S/W:2) | S/W 개발자로 참여</span>
+    <span class="contents-strong">신규프로젝트 | 4인(대표, 디자이너, S/W:2) | S/W 개발자로 참여</span>
   </div>
   <h4 class="title">수행 업무</h4>
   <div class="content">
