@@ -88,7 +88,6 @@
 
 <style>
 .container {
-  user-select: none;
   display: flex;
   font-family: KoHo;
   font-size: 1.25rem;

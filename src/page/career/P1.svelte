@@ -6,29 +6,23 @@
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">
-      카카오 선물하기 서버는 카카오톡을 통해 다른 사용자에게 선물을 보낼 수 있는 기능을 제공합니다.
+      대표적인 도박성이 강한 아케이드 게임으로, 2000년도 초반 많은 성인용 게임장의 인기를 휩쓸었습니다.
     </p>
     <p class="contents-normal">
-      이를 위해 파트너사와 통신 연동을 통해 쿠폰 발급, 연장, 폐기 서비스를 신속하고 신뢰성 있게 제공하는 것이 핵심입니다.
+      이런 시장을 인터넷과 결합하여 합법적 인터넷 도박장을 만드는 것을 목표로 시작된 프로젝트 입니다.
     </p>
-    <p class="contents-normal">
-      As-Is 발급서비스와 비교하여 발급 속도을 개선하고, 운영자가 서버 운영 상황을 모니터링 및 제어가능하도록 개선하였습니다.
-    </p>
-    <p class="contents-normal">
-      또한 서버 이상 발생 시 생기는 대량 장애 메시지를 벌크동작으로 만들고 통계정보를 추가하여, 빠른 장애 복구 할 수 있게 하였습니다.
-    </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 2인(Senior, Junior) | Senior 개발자로 참여</span>
+    <span class="contents-strong">리뉴얼프로젝트 | 4인(대표, 디자이너, S/W:2) | S/W 개발자로 참여</span>
   </div>
   <h4 class="title">수행 업무</h4>
   <div class="content">
     <p class="contents-normal">
-      화면기획, 발급/선발급 서버, 운영자용 웹서버 개발
+      화면 개발, 운영도구 개발, 게임 봇 개발
     </p>
     <p class="contents-strong">
-      언어 - Java Spring Boot | Vue.js
+      언어 - MFC
     </p>
     <p class="contents-strong">
-      기타 - HTTP | Oracle
+      기타 - MSSQL
     </p>
   </div>
 </Project>

@@ -32,7 +32,6 @@
 <style>
 .root {
   font-family: KoHo;
-  user-select: none;
 }
 .container {
   height: 480px;

@@ -2,33 +2,17 @@
   import Project from "./Project.svelte";
 </script>
 
-<Project name="동명대학교 컴퓨터공학과 졸업" imgSrc={["img/career/university_cs.png"]}>
-  <h4 class="title">프로젝트 설명</h4>
+<Project name="동명대학교 컴퓨터공학과" imgSrc={["img/career/university2.png","img/career/university1.png"]}>
+  <h4 class="title">학생 시절</h4>
   <div class="content">
     <p class="contents-normal">
-      카카오 선물하기 서버는 카카오톡을 통해 다른 사용자에게 선물을 보낼 수 있는 기능을 제공합니다.
+      동명대학교는 부산광역시에 있는 사립대학입니다.
     </p>
     <p class="contents-normal">
-      이를 위해 파트너사와 통신 연동을 통해 쿠폰 발급, 연장, 폐기 서비스를 신속하고 신뢰성 있게 제공하는 것이 핵심입니다.
+      정보공학부로 입학하여 컴퓨터공학과를 졸업하였고 평점 3.09/4.5로 이수하였습니다.
     </p>
     <p class="contents-normal">
-      As-Is 발급서비스와 비교하여 발급 속도을 개선하고, 운영자가 서버 운영 상황을 모니터링 및 제어가능하도록 개선하였습니다.
-    </p>
-    <p class="contents-normal">
-      또한 서버 이상 발생 시 생기는 대량 장애 메시지를 벌크동작으로 만들고 통계정보를 추가하여, 빠른 장애 복구 할 수 있게 하였습니다.
-    </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 2인(Senior, Junior) | Senior 개발자로 참여</span>
-  </div>
-  <h4 class="title">수행 업무</h4>
-  <div class="content">
-    <p class="contents-normal">
-      화면기획, 발급/선발급 서버, 운영자용 웹서버 개발
-    </p>
-    <p class="contents-strong">
-      언어 - Java Spring Boot | Vue.js
-    </p>
-    <p class="contents-strong">
-      기타 - HTTP | Oracle
+      관심분야와 비관심분야 성적 차이가 큰편이였고, 성적장학금 2회를 (1,2등) 받았습니다.
     </p>
   </div>
 </Project>
