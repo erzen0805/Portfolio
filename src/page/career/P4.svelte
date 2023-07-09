@@ -6,29 +6,23 @@
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">
-      카카오 선물하기 서버는 카카오톡을 통해 다른 사용자에게 선물을 보낼 수 있는 기능을 제공합니다.
+      자동화 기기들을 원격으로 관리하는 역할을 수행합니다.
     </p>
     <p class="contents-normal">
-      이를 위해 파트너사와 통신 연동을 통해 쿠폰 발급, 연장, 폐기 서비스를 신속하고 신뢰성 있게 제공하는 것이 핵심입니다.
+      이 서버는 사용자 입출금 이력 관리, 기기 상태 모니터링, 소프트웨어 업데이트, 배치 스케줄 등록, 광고 스케줄 등록 등의 기능을 제공합니다.
     </p>
-    <p class="contents-normal">
-      As-Is 발급서비스와 비교하여 발급 속도을 개선하고, 운영자가 서버 운영 상황을 모니터링 및 제어가능하도록 개선하였습니다.
-    </p>
-    <p class="contents-normal">
-      또한 서버 이상 발생 시 생기는 대량 장애 메시지를 벌크동작으로 만들고 통계정보를 추가하여, 빠른 장애 복구 할 수 있게 하였습니다.
-    </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 2인(Senior, Junior) | Senior 개발자로 참여</span>
+    <span class="contents-strong">유지보수,리뉴얼 | 4인(FE:1, BE:3) | Back-end 개발자로 참여</span>
   </div>
   <h4 class="title">수행 업무</h4>
   <div class="content">
     <p class="contents-normal">
-      화면기획, 발급/선발급 서버, 운영자용 웹서버 개발
+      ATM Agent, Application Server, Web Server 유지보수
     </p>
     <p class="contents-strong">
-      언어 - Java Spring Boot | Vue.js
+      언어 - JSP | ASP.NET | Vanilla JS | GCC
     </p>
     <p class="contents-strong">
-      기타 - HTTP | Oracle
+      기타 - HTTP | Oracle | MSSQL
     </p>
   </div>
 </Project>

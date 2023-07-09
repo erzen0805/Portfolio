@@ -6,29 +6,29 @@
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">
-      카카오 선물하기 서버는 카카오톡을 통해 다른 사용자에게 선물을 보낼 수 있는 기능을 제공합니다.
+      이 서버 프로그램은 딥러닝 알고리즘을 활용하여 가상화폐 거래를 자동화합니다.
     </p>
     <p class="contents-normal">
-      이를 위해 파트너사와 통신 연동을 통해 쿠폰 발급, 연장, 폐기 서비스를 신속하고 신뢰성 있게 제공하는 것이 핵심입니다.
+      딥러닝을 통해 가격 패턴과 트렌드 등을 학습하고 예측하여 효과적인 투자 결정을 내립니다.
     </p>
     <p class="contents-normal">
-      As-Is 발급서비스와 비교하여 발급 속도을 개선하고, 운영자가 서버 운영 상황을 모니터링 및 제어가능하도록 개선하였습니다.
+      이 봇을 사용하여 운영 및 백데이터 수집을 위해 현재도 적은 금액으로 활동 중입니다.
     </p>
     <p class="contents-normal">
-      또한 서버 이상 발생 시 생기는 대량 장애 메시지를 벌크동작으로 만들고 통계정보를 추가하여, 빠른 장애 복구 할 수 있게 하였습니다.
+      빗썸, 바이낸스를 포함한 다수의 거래소의 API와 연동되어 있습니다.
     </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 2인(Senior, Junior) | Senior 개발자로 참여</span>
+    <span class="contents-strong">신규프로젝트 | 1인 | 전체 개발</span>
   </div>
   <h4 class="title">수행 업무</h4>
   <div class="content">
     <p class="contents-normal">
-      화면기획, 발급/선발급 서버, 운영자용 웹서버 개발
+      데몬서버 개발, 거래소 API연동, 알고리즘 개발 및 시뮬레이션
     </p>
     <p class="contents-strong">
-      언어 - Java Spring Boot | Vue.js
+      언어 - Python
     </p>
     <p class="contents-strong">
-      기타 - HTTP | Oracle
+      기타 - HTTP | Keras | MySQL | Redis
     </p>
   </div>
 </Project>

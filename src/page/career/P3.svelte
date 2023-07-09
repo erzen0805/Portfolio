@@ -6,29 +6,29 @@
   <h4 class="title">프로젝트 설명</h4>
   <div class="content">
     <p class="contents-normal">
-      카카오 선물하기 서버는 카카오톡을 통해 다른 사용자에게 선물을 보낼 수 있는 기능을 제공합니다.
+      한국전력공사(KEPCO), 코레일에서 운영하는 전력 설비의 안전 및 신뢰성을 평가하기 위한 시스템입니다.
     </p>
     <p class="contents-normal">
-      이를 위해 파트너사와 통신 연동을 통해 쿠폰 발급, 연장, 폐기 서비스를 신속하고 신뢰성 있게 제공하는 것이 핵심입니다.
+      발전소, 변전소, 전력선로 등의 시설물을 모니터링하고, 잠재적인 문제를 조기에 탐지하여 사고나 장애의 발생을 예방하고자 개발되었습니다.
     </p>
     <p class="contents-normal">
-      As-Is 발급서비스와 비교하여 발급 속도을 개선하고, 운영자가 서버 운영 상황을 모니터링 및 제어가능하도록 개선하였습니다.
+      시스템은 데이터를 수집하고 분석한 결과를 시각화하고 경고나 알림을 보내어 운영자들이 조치를 취할 수 있도록 합니다.
     </p>
     <p class="contents-normal">
-      또한 서버 이상 발생 시 생기는 대량 장애 메시지를 벌크동작으로 만들고 통계정보를 추가하여, 빠른 장애 복구 할 수 있게 하였습니다.
+      기획 단계 아이디어로 특허 3건을 취득하였고, 과제로 파생 시스템 (예방진단교육 시스템, 예방진단 인증시험 시스템) 개발을 하여 당해 한전정부과제 성과 1, 2위를 달성하였습니다.
     </p>
-    <span class="contents-strong">리뉴얼프로젝트 | 2인(Senior, Junior) | Senior 개발자로 참여</span>
+    <span class="contents-strong">신규프로젝트 | 9인(H/W:4, S/W:3, 통신:2) | S/W 파트 리더로 참여</span>
   </div>
   <h4 class="title">수행 업무</h4>
   <div class="content">
     <p class="contents-normal">
-      화면기획, 발급/선발급 서버, 운영자용 웹서버 개발
+      화면기획, 프로세서/통신 아키텍쳐 설계, FE외주개발 매니징, 데이터 처리 코어모듈 개발, 진단알고리즘 개발
     </p>
     <p class="contents-strong">
-      언어 - Java Spring Boot | Vue.js
+      언어 - .NET WinForm | .NET Core | jQuery
     </p>
     <p class="contents-strong">
-      기타 - HTTP | Oracle
+      기타 - .NET Lightning Chart | three.js | HTTP | MSSQL
     </p>
   </div>
 </Project>
