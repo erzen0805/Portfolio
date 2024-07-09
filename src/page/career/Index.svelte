@@ -22,7 +22,7 @@
   };
 
   const projects = [
-    {title: "재직중 (1.4년)", company: "전력설비 예방진단 | 비츠로시스"},
+    {title: "재직중 (2.4년)", company: "전력설비 예방진단 | 비츠로시스"},
     {title: "~2022 (1.2년)", company: "전력설비 예방진단 | YPP"},
     {title: "~2021 (1.0년)", company: "SCADA | Autonics"},
     {title: "~2020 (1.2년)", company: "카카오 선물하기 서버 | 쿠프마케팅"},
